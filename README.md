@@ -12,11 +12,34 @@ A comprehensive RNA-seq data analysis pipeline that normalizes raw count matrice
 - **WGCNA**: Cluster genes based on co-expression into modules.
 - **Heatmap**: Hierarchical clustering of gene expression with module and condition annotations.
 
+## Requirements
+
+**Snakemake**: This project is a Snakemake pipeline, and you need to have Snakemake installed to run the workflows. To install Snakemake, you can use `conda`:
+  ```bash
+  conda install snakemake
+  ```
+
+This project has several dependencies which need to be installed for proper functionality. Here's a list of the required libraries:
+
+- `sklearn`
+- `gseapy`
+- `matplotlib`
+- `numpy`
+- `pandas`
+- `seaborn`
+
+To install these requirements, you can use `pip`:
+
+```bash
+pip install -r requirements.txt
+```
+
+
 ## Quick Start
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/buriedsand/RNASeqPipeline.git
+   git clone https://github.com/blukas4/RNASeqPipeline.git
    ```
 
 2. Navigate to the directory:
@@ -24,21 +47,11 @@ A comprehensive RNA-seq data analysis pipeline that normalizes raw count matrice
    cd RNASeqPipeline
    ```
 
-3. Install the required packages using the provided environment file (requires conda):
-   ```bash
-   conda env create -f envs/environment.yaml
-   ```
+3. Configure your analysis by editing the `config.yaml` file.
 
-4. Activate the environment:
+4. Run the pipeline:
    ```bash
-   conda activate rnaseq-env
-   ```
-
-5. Configure your analysis by editing the `config.yaml` file.
-
-6. Run the pipeline:
-   ```bash
-   snakemake --use-conda --configfile path/to/yourconfig.yaml
+   snakemake --cores all
    ```
 
 ## Configuration
