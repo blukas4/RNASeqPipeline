@@ -16,12 +16,12 @@ A comprehensive RNA-seq data analysis pipeline that normalizes raw count matrice
 
 ### Essential Software
 
-**Snakemake**: This project is a Snakemake pipeline, and you need to have Snakemake installed to run the workflows. To install Snakemake, you can use `conda`:
+- **Snakemake**: This project is a Snakemake pipeline, and you need to have Snakemake installed to run the workflows. To install Snakemake, you can use `conda`:
   ```bash
   conda install snakemake
   ```
 
-**R**: Some steps in this pipeline use R scripts. Ensure you have [R installed](https://cran.r-project.org/mirrors.html). 
+- **R**: Some steps in this pipeline use R scripts. Ensure you have [R installed](https://cran.r-project.org/mirrors.html). 
 
   R packages required:
   - `WGCNA`
