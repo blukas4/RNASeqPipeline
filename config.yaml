@@ -1,0 +1,6 @@
+raw_counts_file: path/to/raw_counts.csv
+metadata_file: path/to/metadata.csv
+condition_column: Condition
+output_dir: outputs
+gene_sets:
+  - GO_Biological_Process_2023
