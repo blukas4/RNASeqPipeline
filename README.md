@@ -19,6 +19,19 @@ A comprehensive RNA-seq data analysis pipeline that normalizes raw count matrice
   conda install snakemake
   ```
 
+**R**: Some steps in this pipeline use R scripts. Ensure you have [R installed](https://cran.r-project.org/mirrors.html). 
+
+  R packages required:
+  - `WGCNA`
+  - `DESeq2`
+
+  To install these R packages, open an R session and run:
+
+  ```R
+  install.packages(c("BiocManager"))
+  BiocManager::install(c("WGCNA", "DESeq2"))
+  ```
+
 This project has several dependencies which need to be installed for proper functionality. Here's a list of the required libraries:
 
 - `sklearn`
