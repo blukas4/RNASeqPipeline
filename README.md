@@ -14,6 +14,8 @@ A comprehensive RNA-seq data analysis pipeline that normalizes raw count matrice
 
 ## Requirements
 
+### Essential Software
+
 **Snakemake**: This project is a Snakemake pipeline, and you need to have Snakemake installed to run the workflows. To install Snakemake, you can use `conda`:
   ```bash
   conda install snakemake
@@ -31,6 +33,8 @@ A comprehensive RNA-seq data analysis pipeline that normalizes raw count matrice
   install.packages(c("BiocManager"))
   BiocManager::install(c("WGCNA", "DESeq2"))
   ```
+
+### Python Dependencies
 
 This project has several dependencies which need to be installed for proper functionality. Here's a list of the required libraries:
 
